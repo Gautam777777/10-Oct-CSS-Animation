@@ -1,0 +1,29 @@
+.p{
+    /* state 1*/
+    width: 400px;
+    height: 400px;
+    background: red;
+    border: 10px solid black;
+    margin: 150px auto;
+    transform: rotate(0deg);
+    transition: 5s linear;
+    animation-name: xyz;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes xyz{
+    from{
+        transform: rotate(0deg);
+        background: red;
+    }
+    to{
+        transform: rotate(360deg);
+        background: blue;
+    }
+}
+.p:hover{
+    /* state 2*/
+    background: green;
+    transform: rotate(360deg);
+}
